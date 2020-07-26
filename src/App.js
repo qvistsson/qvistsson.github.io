@@ -8,6 +8,10 @@ function App() {
     <Modules.Container>
       <Modules.SiteLogo />
       <Modules.Introduction />
+      <Modules.ProjectsContainer>
+        <Modules.Project />
+        <Modules.Project />
+      </Modules.ProjectsContainer>
     </Modules.Container>
   );
 }

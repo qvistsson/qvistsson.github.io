@@ -6,11 +6,11 @@
   --pop: rgb(204, 73, 95);
 }
 
-/*
+/* 
 * {
-    border: 1px solid rgba(255, 255, 255, 0.418);
+  border: 1px solid rgba(255, 255, 255, 0.418);
 }
- */
+*/
 
 body {
   background-color: var(--bg);
@@ -18,7 +18,14 @@ body {
 
 .deco-stretch {
   flex: 1;
-  max-width: 6rem;
+  max-width: 10%;
+  height: 0.1rem;
+  background-color: var(--theme2);
+}
+
+.deco-stretch2 {
+  flex: 1;
+  max-width: 15%;
   height: 0.1rem;
   background-color: var(--theme2);
 }
@@ -28,11 +35,14 @@ body {
   font-size: 0.7rem;
 }
 
-.deco-stretch2 {
-  flex: 1;
-  max-width: 11rem;
-  height: 0.1rem;
-  background-color: var(--theme2);
+.expand-icon {
+    color: var(--theme2);
+    font-size: 1.1rem;
+}
+
+.project-circle {
+    color: var(--theme2);
+    font-size: 0.5rem;
 }
 
 p {
@@ -73,18 +83,11 @@ p.intro-body span {
   font-size: 1rem;
   padding-bottom: 0.1rem;
   border-bottom: 1.5px dashed var(--theme2);
+  border-color: var(--theme2);
   color: var(--pop);
 }
 
-i.intro {
-  color: var(--theme2);
-  font-size: 4rem;
-  margin-left: var(--standard);
-  margin-right: var(--standard);
-  padding: 0.5rem;
-}
-
-.intro-text-container {
+.max-width {
   max-width: 45rem;
 }
 
@@ -104,4 +107,37 @@ i.intro {
   border-radius: 0.5rem;
   box-shadow: 3px 3px 0px var(--theme1);
   text-shadow: 1px 1px 0px var(--theme1);
+}
+
+.project-angle-deco {
+    max-width: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    max-height: 3rem;
+    border-bottom: 0.1rem solid var(--theme2);
+    border-left: 0.1rem solid var(--theme2);
+    border-bottom-left-radius: 0.5rem;
+    transform: translateY(-50%);
+}
+
+.project {
+    overflow: hidden;
+}
+
+hr {
+    border: none;
+    border-bottom: 2px solid var(--theme2);
+}
+
+.d-inline {
+    display: inline;
+}
+
+.proj-title {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--theme2);
+    color: white;
+    padding: 0.2rem;
 }
