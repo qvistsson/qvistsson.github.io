@@ -74,9 +74,10 @@ function Project(props) {
             let's get a really long paragraph here like waho whio soh. So let's
             get a really long paragraph here like waho whio soh.
           </p>
+          <p className="proj-tag d-inline">D3</p>
         </div>
       </div>
-      <i class="fas fa-angle-double-down m-top expand-icon"></i>
+      <i class="fas fa-caret-down m-top expand-icon"></i>
     </div>
   );
 }

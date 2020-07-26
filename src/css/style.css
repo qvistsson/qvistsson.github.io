@@ -37,7 +37,7 @@ body {
 
 .expand-icon {
     color: var(--theme2);
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .project-circle {
@@ -85,6 +85,17 @@ p.intro-body span {
   border-bottom: 1.5px dashed var(--theme2);
   border-color: var(--theme2);
   color: var(--pop);
+}
+
+p.proj-tag {
+    margin-left: 0.5rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--pop);
+}
+
+p.proj-tag::before {
+    content: "#";
 }
 
 .max-width {
