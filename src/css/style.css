@@ -16,18 +16,7 @@ body {
   background-color: var(--bg);
 }
 
-.deco-container {
-  max-width: 8.5rem;
-  flex: 1;
-}
-
-.deco-container2 {
-  max-width: 11.5rem;
-  flex: 1;
-}
-
 .deco-stretch {
-  flex: 1;
   height: 0.1rem;
   background-color: var(--theme2);
 }
@@ -44,18 +33,14 @@ body {
 }
 
 .expand-icon {
-    color: var(--theme2);
-    font-size: 1.5rem;
-    align-self: center;
+  color: var(--theme2);
+  font-size: 1.5rem;
+  align-self: center;
 }
 
 .project-circle {
-    color: var(--theme2);
-    font-size: 0.5rem;
-}
-
-.project-content {
-  border: 1px solid red;
+  color: var(--theme2);
+  font-size: 0.5rem;
 }
 
 p {
@@ -101,14 +86,14 @@ p.intro-body span {
 }
 
 p.proj-tag {
-    margin-left: 0.5rem;
-    font-weight: 600;
-    color: white;
-    background-color: var(--pop);
+  margin-left: 0.5rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--pop);
 }
 
 p.proj-tag::before {
-    content: "#";
+  content: '#';
 }
 
 .max-width {
@@ -134,36 +119,36 @@ p.proj-tag::before {
 }
 
 .project-angle-deco {
-    max-width: 3rem;
-    min-width: 3rem;
-    min-height: 3rem;
-    max-height: 3rem;
-    border-bottom: 0.1rem solid var(--theme2);
-    border-left: 0.1rem solid var(--theme2);
-    border-bottom-left-radius: 0.5rem;
-    transform: translateY(-50%);
+  max-width: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  max-height: 3rem;
+  border-bottom: 0.1rem solid var(--theme2);
+  border-left: 0.1rem solid var(--theme2);
+  border-bottom-left-radius: 0.5rem;
+  transform: translateY(-50%);
 }
 
 .project {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 hr {
-    border: none;
-    border-bottom: 2px solid var(--theme2);
+  border: none;
+  border-bottom: 2px solid var(--theme2);
 }
 
 .d-inline {
-    display: inline;
+  display: inline;
 }
 
 .proj-title {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: var(--theme2);
-    color: white;
-    padding: 0.2rem;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--theme2);
+  color: white;
+  padding: 0.2rem;
 }
 
 h2.sub-header {
