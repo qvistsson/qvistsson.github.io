@@ -18,12 +18,12 @@ function App() {
         />
         <Modules.ShowyIndent
           width="11.5rem"
-          margin="m-bottom"
+          margin="m-bottom-large"
           text="I'm Qvistsson"
           excl={false}
         />
         <Modules.TextContainer content={Text.Introduction()} />
-        <Modules.SubHeader text="Projects" margin="m-top-large m-bottom" />
+        <Modules.SubHeader text="Projects" margin="m-top-large m-bottom-large" />
         <Modules.Project {...Projects.pomodoro} />
         <Modules.ProjectDivider divString="///" />
         <Modules.Project {...Projects.calculator} />
