@@ -46,11 +46,16 @@ body {
 .expand-icon {
     color: var(--theme2);
     font-size: 1.5rem;
+    align-self: center;
 }
 
 .project-circle {
     color: var(--theme2);
     font-size: 0.5rem;
+}
+
+.project-content {
+  border: 1px solid red;
 }
 
 p {
@@ -159,4 +164,28 @@ hr {
     background-color: var(--theme2);
     color: white;
     padding: 0.2rem;
+}
+
+h2.sub-header {
+  font-size: 1.4rem;
+  font-family: 'Source Code Pro', monospace;
+  border-bottom: dashed 2px var(--theme2);
+  padding-bottom: 0.25rem;
+  color: var(--theme2);
+}
+
+.sub-header-deco-div {
+  display: none;
+  width: 0.3rem;
+  margin: 0 1rem;
+  background-color: var(--theme2);
+}
+
+.project-divider {
+  width: 100%;
+}
+
+.horizontal-line {
+  border-bottom: 0.1rem solid var(--theme2);
+  flex: 1;
 }

@@ -12,6 +12,16 @@
   --large: 3rem;
 }
 
+/* Utilities unrelated to screen size */
+
+.grow {
+  flex: 1;
+}
+
+.maxed {
+  width: 100%;
+}
+
 /* Standard options (standard should be thought of as extra-small, the default option */
 
 .display {

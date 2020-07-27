@@ -1,8 +1,10 @@
 import React from 'react';
 
+const dividerString = '///';
+
 function Introduction() {
   return (
-    <div className="flex-column m-top-large m-left-large m-right-large">
+    <div className="flex-column m-top-large m-left-large m-right-large m-bottom">
       <div className="flex-row align-center m-bottom-small">
         <div className="deco-container flex-row align-center">
           <div className="deco-stretch m-right-small"></div>
@@ -32,9 +34,6 @@ function Introduction() {
           I've also created <span>WordPress</span> themes, <span>D3</span> data
           visualizations and currently I'm studying <span>Bootstrap</span> and{' '}
           <span>Redux</span>.
-        </p>
-        <p className="intro-body m-bottom-small">
-          Please have a look at some of my projects:
         </p>
       </div>
     </div>
@@ -67,21 +66,39 @@ function ProjectsContainer(props) {
 
 function Project(props) {
   return (
-    <div className="project m-left-large m-top-large max-width flex-column align-center">
-      <div className="flex-row align-center">
+    <div className="project m-left-large max-width flex-column align-start m-bottom">
+      <div className="flex-row align-center maxed">
         <div className="project-angle-deco"></div>
         <i className="fas fa-circle m-left-small project-circle"></i>
-        <div className="project-content m-left">
-          <h2 className="proj-title d-inline m-right-small">Project Title</h2>
-          <p className="intro-body d-inline">
-            So let's get a really long paragraph here like waho whio soh. So
-            let's get a really long paragraph here like waho whio soh. So let's
-            get a really long paragraph here like waho whio soh.
-          </p>
-          <p className="proj-tag d-inline">D3</p>
+        <div className="project-content m-left grow">
+          <div className="flex-row justify-between align-stretch">
+            <h2 className="proj-title d-inline m-right-small">{props.title}</h2>
+            <div className="flex-row align-center">
+              {props.tags.map((i) => (
+                <p className="proj-tag d-inline">{i}</p>
+              ))}
+            </div>
+          </div>
+          <p className="intro-body m-top-small">{props.description}</p>
         </div>
       </div>
-      <i class="fas fa-caret-down m-top expand-icon"></i>
+      <div className="project-divider flex-row align-center justify-center m-top-large m-bottom-large">
+        <div className="horizontal-line"></div>
+        <p className="proj-div-text">{dividerString}</p>
+        <div className="horizontal-line"></div>
+      </div>
+    </div>
+  );
+}
+
+function SubHeader(props) {
+  return (
+    <div className="m-left-large m-bottom">
+      <div className="sub-header-container flex-row justify-start align-stretch max-width m-left-large">
+        <div className="sub-header-deco-div"></div>
+        <h2 className="sub-header">{props.text}</h2>
+        <div className="sub-header-deco-div"></div>
+      </div>
     </div>
   );
 }
@@ -93,4 +110,5 @@ export {
   Introduction,
   Project,
   ProjectsContainer,
+  SubHeader,
 };
