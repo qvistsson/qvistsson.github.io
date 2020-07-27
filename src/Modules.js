@@ -4,15 +4,19 @@ function Introduction() {
   return (
     <div className="flex-column m-top-large m-left-large m-right-large">
       <div className="flex-row align-center m-bottom-small">
-        <div className="deco-stretch m-right-small"></div>
-        <i className="fas fa-circle m-right-small intro-circle"></i>
+        <div className="deco-container flex-row align-center">
+          <div className="deco-stretch m-right-small"></div>
+          <i className="fas fa-circle m-right-small intro-circle"></i>
+        </div>
         <p className="showy">
           Hi there<span className="excl">!</span>
         </p>
       </div>
       <div className="flex-row align-center m-bottom">
-        <div className="deco-stretch2 m-right-small"></div>
-        <i className="fas fa-circle m-right-small intro-circle"></i>
+        <div className="deco-container2 flex-row align-center">
+          <div className="deco-stretch2 m-right-small"></div>
+          <i className="fas fa-circle m-right-small intro-circle"></i>
+        </div>
         <p className="showy">I'm Qvistsson</p>
       </div>
       <div className="m-left-large m-top-small intro-text-container max-width">
