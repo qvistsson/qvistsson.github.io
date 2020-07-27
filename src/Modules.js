@@ -2,8 +2,13 @@ import React from 'react';
 
 function SiteLogo() {
   return (
-    <div className="site-logo">
-      <p>Q</p>
+    <div className="flex-row align-center justify-start">
+      <div className="site-logo">
+        <p>Q</p>
+      </div>
+      <a className="contact-top m-left-large" href="#contact-info">
+        Contact
+      </a>
     </div>
   );
 }
@@ -31,7 +36,25 @@ function Project(props) {
               ))}
             </div>
           </div>
-          <p className="intro-body m-top-small">{props.description}</p>
+          <p className="intro-body m-top m-bottom">{props.description}</p>
+          <div className="flex-row">
+            <a
+              href={props.gitLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-social"
+            >
+              <i className="far fa-eye"></i>Go To Project
+            </a>
+            <a
+              href={props.gitLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-social m-left"
+            >
+              <i className="fab fa-github"></i>View Source
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -40,7 +63,7 @@ function Project(props) {
 
 function SubHeader(props) {
   return (
-    <div className={props.margin}>
+    <div className={props.margin} id={props.id}>
       <div className="sub-header-container flex-row justify-start align-stretch max-width m-left-large">
         <div className="sub-header-deco-div"></div>
         <h2 className="sub-header">{props.text}</h2>
@@ -80,11 +103,80 @@ function TextContainer(props) {
 
 function ProjectDivider(props) {
   return (
-    <div className="project-divider flex-row align-center justify-center m-left-large max-width m-top m-bottom">
+    <div className="project-divider flex-row align-center justify-center m-left-large max-width m-top-large m-bottom-large">
       <div className="horizontal-line"></div>
       <p className="proj-div-text">{props.divString}</p>
       <div className="horizontal-line"></div>
     </div>
+  );
+}
+
+function ContactSocials(props) {
+  return (
+    <div className="project m-left-large max-width flex-column align-start">
+      <div className="flex-row align-center maxed">
+        <div className="project-angle-deco"></div>
+        <i className="fas fa-circle m-left-small project-circle"></i>
+        <div className="project-content m-left grow">
+          <div className="flex-row">
+            <a
+              href={props.gitLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-social"
+            >
+              <i className="far fa-envelope"></i>e-mail
+            </a>
+            <a
+              href={props.gitLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-social m-left"
+            >
+              <i className="fab fa-linkedin"></i>LinkedIn
+            </a>
+            <a
+              href={props.gitLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-social m-left"
+            >
+              <i className="fab fa-github"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="flex-row justify-center align-center">
+      <p class="footer-text">© Qvistsson 2020</p>
+      <i className="fas fa-circle m-left-small m-right-small footer-circle"></i>
+      <p class="footer-text">
+        Powered by{' '}
+        <a
+          href="https://reactjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React
+        </a>
+      </p>
+      <i className="fas fa-circle m-left-small m-right-small footer-circle"></i>
+      <p class="footer-text">
+        Icons from{' '}
+        <a
+          href="https://fontawesome.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Font Awesome
+        </a>
+      </p>
+    </footer>
   );
 }
 
@@ -96,4 +188,6 @@ export {
   ShowyIndent,
   TextContainer,
   ProjectDivider,
+  ContactSocials,
+  Footer,
 };
