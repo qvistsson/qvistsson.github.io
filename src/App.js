@@ -23,12 +23,14 @@ function App() {
           excl={false}
         />
         <Modules.TextContainer content={Text.Introduction()} />
-        <Modules.SubHeader text="Projects" margin="m-top-large m-bottom-large" />
+        <Modules.SubHeader text="Projects" margin="m-top-large m-bottom" />
         <Modules.Project {...Projects.pomodoro} />
         <Modules.ProjectDivider divString="///" />
         <Modules.Project {...Projects.calculator} />
         <Modules.ProjectDivider divString="///" />
         <Modules.Project {...Projects.dataviz} />
+        <Modules.ProjectDivider divString="///" />
+        <Modules.Project {...Projects.dataviz2} />
         <Modules.SubHeader text="Contact me" margin="m-top-large m-bottom" id="contact-info" />
         <Modules.TextContainer content={Text.ContactMe()} />
         <Modules.ContactSocials />

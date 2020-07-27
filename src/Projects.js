@@ -1,22 +1,35 @@
 const Projects = {
   pomodoro: {
     title: 'Pomodoro Clock',
-    description: 'A super duper cute Pomodoro Clock with',
-    tags: ['React', 'CSS'],
-    gitLink: 'google.com',
+    description:
+      'A version of the classic productivity tool, with configurable length pomodoros—and breaks!',
+    tags: ['React'],
+    viewLink: 'https://qvistsson.github.io/pomodoro-clock/',
+    gitLink: 'https://github.com/qvistsson/pomodoro-clock',
   },
   calculator: {
     title: 'Calculator',
     description:
-      'A calculator created in React. And then something else to add! Like woh hey.',
-    tags: ['React', 'Bootstrap'],
+      'A calculator created in React, which proved to be a good practice in state-based logic.',
+    tags: ['React'],
+    viewLink: 'https://qvistsson.github.io/javascript-calculator/',
+    gitLink: 'https://github.com/qvistsson/javascript-calculator',
   },
   dataviz: {
-    title: 'Data Visualizations',
+    title: 'Data Visualization - Choropleth Map',
     description:
-      'Data visualizations made with the D3 library, as part of the FCC curriculum.',
+      'Data visualization practice with the D3 library, using data on educational attainment in the US.',
     tags: ['D3'],
+    viewLink: 'https://qvistsson.github.io/choropleth-map/',
+    gitLink: 'https://github.com/qvistsson/choropleth-map',
   },
+  dataviz2: {
+      title: 'Data Visualization - Heat Map',
+      description: 'Another data go at data visualization with D3, this time on average temperatures between 1753-2015',
+      tags: ['D3'],
+      viewLink: 'https://qvistsson.github.io/heat-map/',
+      gitLink: 'https://github.com/qvistsson/heat-map',
+  }
 };
 
 export default Projects;

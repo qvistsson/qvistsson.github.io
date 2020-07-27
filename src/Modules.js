@@ -39,7 +39,7 @@ function Project(props) {
           <p className="intro-body m-top m-bottom">{props.description}</p>
           <div className="flex-row">
             <a
-              href={props.gitLink}
+              href={props.viewLink}
               target="_blank"
               rel="noopener noreferrer"
               className="link-social"
