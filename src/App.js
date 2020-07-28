@@ -35,7 +35,7 @@ function App() {
           />
           <Modules.SubHeader
             text="Projects"
-            margin="m-bottom-large m-left-x-large"
+            margin="m-bottom-large screen-small-m-left-x-large"
           />
           <Modules.Project
             {...Projects.pomodoro}
@@ -76,13 +76,18 @@ function App() {
             indent="6rem"
             decoHeight="2rem"
           />
+          <Modules.ProjectDivider
+            indent="6rem"
+            margin="m-bottom-large"
+            divString="///"
+          />
           <Modules.SubHeader
             text="Contact me"
-            margin="m-left-x-large m-bottom-large"
+            margin="screen-small-m-left-x-large m-bottom-large"
             id="contact-info"
           />
-          <Modules.TextContainer margin="m-left-x-large m-bottom-small" content={Text.ContactMe()} />
-          <Modules.ContactSocials margin="m-left-x-large" />
+          <Modules.TextContainer margin="screen-small-m-left-x-large m-bottom-small" content={Text.ContactMe()} />
+          <Modules.ContactSocials margin="screen-small-m-left-x-large" />
         </div>
       </div>
       <Modules.Footer />

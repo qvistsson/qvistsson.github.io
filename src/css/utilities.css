@@ -258,6 +258,10 @@
     display: none;
   }
 
+  .screen-small-block {
+    display: block;
+  }
+
   .screen-small-flex-row {
     display: flex;
     flex-direction: row;
@@ -520,6 +524,10 @@
 @media screen and (min-width: 800px) {
   .screen-medium-hide {
     display: none;
+  }
+
+  .screen-medium-block {
+    display: block;
   }
 
   .screen-medium-flex-row {

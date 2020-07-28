@@ -5,8 +5,8 @@ function SiteLogo(props) {
     <div
       className={
         props.margin
-          ? 'flex-row align-center justify-between ' + props.margin
-          : 'flex-row align-center justify-between'
+          ? 'flex-row align-start justify-between ' + props.margin
+          : 'flex-row align-start justify-between'
       }
     >
       <div className="site-logo">
@@ -29,7 +29,7 @@ function Project(props) {
       }
     >
       <div
-        className="flex-row align-center"
+        className="hide screen-small-flex-row align-center"
         style={{ minWidth: props.indent, maxWidth: props.indent }}
       >
         <div
@@ -63,7 +63,7 @@ function Project(props) {
             href={props.gitLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="link-social m-left"
+            className="link-social m-left-small screen-small-m-left"
           >
             <i className="fab fa-github"></i>View Source
           </a>
@@ -121,7 +121,7 @@ function ProjectDivider(props) {
           : 'project-divider flex-row align-center justify-center max-width'
       }
     >
-      <div style={{ width: props.indent }}></div>
+      <div className="hide screen-small-block" style={{ width: props.indent }}></div>
       <div className="horizontal-line"></div>
       <p className="proj-div-text">{props.divString}</p>
       <div className="horizontal-line"></div>
@@ -131,7 +131,7 @@ function ProjectDivider(props) {
 
 function ContactSocials(props) {
   return (
-    <div className={props.margin ? 'flex-row ' + props.margin : 'flex-row'}>
+    <div className={props.margin ? 'flex-column screen-small-flex-row ' + props.margin : 'flex-column screen-small-flex-row'}>
       <a
         href={props.gitLink}
         target="_blank"
@@ -144,7 +144,7 @@ function ContactSocials(props) {
         href={props.gitLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="link-social m-left"
+        className="link-social m-top-small screen-small-no-m-top screen-small-m-left"
       >
         <i className="fab fa-linkedin"></i>LinkedIn
       </a>
@@ -152,7 +152,7 @@ function ContactSocials(props) {
         href={props.gitLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="link-social m-left"
+        className="link-social m-top-small screen-small-no-m-top screen-small-m-left"
       >
         <i className="fab fa-github"></i>GitHub
       </a>
@@ -162,9 +162,9 @@ function ContactSocials(props) {
 
 function Footer() {
   return (
-    <footer className="flex-row justify-center align-center screen-medium-no-m">
+    <footer className="flex-column screen-small-flex-row justify-center align-center">
       <p class="footer-text">© Qvistsson 2020</p>
-      <i className="fas fa-circle m-left-small m-right-small footer-circle"></i>
+      <i className="fas fa-circle hide screen-small-block m-left-small m-right-small footer-circle"></i>
       <p class="footer-text">
         Powered by{' '}
         <a
@@ -175,7 +175,7 @@ function Footer() {
           React
         </a>
       </p>
-      <i className="fas fa-circle m-left-small m-right-small footer-circle"></i>
+      <i className="fas fa-circle hide screen-small-block m-left-small m-right-small footer-circle"></i>
       <p class="footer-text">
         Icons from{' '}
         <a

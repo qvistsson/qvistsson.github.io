@@ -16,7 +16,7 @@ const Projects = {
     gitLink: 'https://github.com/qvistsson/javascript-calculator',
   },
   dataviz: {
-    title: 'Data Visualization - Choropleth Map',
+    title: 'Choropleth Map',
     description:
       'Data visualization practice with the D3 library, using data on educational attainment in the US.',
     tags: ['D3'],
@@ -24,7 +24,7 @@ const Projects = {
     gitLink: 'https://github.com/qvistsson/choropleth-map',
   },
   dataviz2: {
-      title: 'Data Visualization - Heat Map',
+      title: 'Heat Map',
       description: 'Another data go at data visualization with D3, this time on average temperatures between 1753-2015.',
       tags: ['D3'],
       viewLink: 'https://qvistsson.github.io/heat-map/',
