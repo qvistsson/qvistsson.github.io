@@ -10,9 +10,10 @@
   --small: 0.5rem;
   --standard: 1.5rem;
   --large: 3rem;
+  --x-large: 6rem;
 }
 
-/* Utilities unrelated to screen size */
+/* Utilities not get given screen size variations */
 
 .overflow-hidden {
   overflow: hidden;
@@ -27,10 +28,6 @@
 }
 
 /* Standard options (standard should be thought of as extra-small, the default option */
-
-.display {
-  display: initial;
-}
 
 .hide {
   display: none;
@@ -152,6 +149,26 @@
   margin-right: var(--large);
 }
 
+.m-x-large {
+  margin: var(--x-large);
+}
+
+.m-top-x-large {
+  margin-top: var(--x-large);
+}
+
+.m-bottom-x-large {
+  margin-bottom: var(--x-large);
+}
+
+.m-left-x-large {
+  margin-left: var(--x-large);
+}
+
+.m-right-x-large {
+  margin-right: var(--x-large);
+}
+
 .p {
   padding: var(--standard);
 }
@@ -212,13 +229,29 @@
   padding-right: var(--large);
 }
 
+.p-x-large {
+  padding: var(--x-large);
+}
+
+.p-top-x-large {
+  padding-top: var(--x-large);
+}
+
+.p-bottom-x-large {
+  padding-bottom: var(--x-large);
+}
+
+.p-left-x-large {
+  padding-left: var(--x-large);
+}
+
+.p-right-x-large {
+  padding-right: var(--x-large);
+}
+
 /* Small screen options */
 
 @media screen and (min-width: 525px) {
-  .screen-small-display {
-    display: initial;
-  }
-
   .screen-small-hide {
     display: none;
   }
@@ -339,6 +372,26 @@
     margin-right: var(--large);
   }
 
+  .screen-small-m-x-large {
+    margin: var(--x-large);
+  }
+
+  .screen-small-m-top-x-large {
+    margin-top: var(--x-large);
+  }
+
+  .screen-small-m-bottom-x-large {
+    margin-bottom: var(--x-large);
+  }
+
+  .screen-small-m-left-x-large {
+    margin-left: var(--x-large);
+  }
+
+  .screen-small-m-right-x-large {
+    margin-right: var(--x-large);
+  }
+
   .screen-small-no-m {
     margin: 0;
   }
@@ -419,6 +472,26 @@
     padding-right: var(--large);
   }
 
+  .screen-small-p-x-large {
+    padding: var(--x-large);
+  }
+
+  .screen-small-p-top-x-large {
+    padding-top: var(--x-large);
+  }
+
+  .screen-small-p-bottom-x-large {
+    padding-bottom: var(--x-large);
+  }
+
+  .screen-small-p-left-x-large {
+    padding-left: var(--x-large);
+  }
+
+  .screen-small-p-right-x-large {
+    padding-right: var(--x-large);
+  }
+
   .screen-small-no-p {
     padding: 0;
   }
@@ -443,10 +516,6 @@
 /* Medium options */
 
 @media screen and (min-width: 800px) {
-  .screen-medium-display {
-    display: initial;
-  }
-
   .screen-medium-hide {
     display: none;
   }
@@ -567,6 +636,26 @@
     margin-right: var(--large);
   }
 
+  .screen-medium-m-x-large {
+    margin: var(--x-large);
+  }
+
+  .screen-medium-m-top-x-large {
+    margin-top: var(--x-large);
+  }
+
+  .screen-medium-m-bottom-x-large {
+    margin-bottom: var(--x-large);
+  }
+
+  .screen-medium-m-left-x-large {
+    margin-left: var(--x-large);
+  }
+
+  .screen-medium-m-right-x-large {
+    margin-right: var(--x-large);
+  }
+
   .screen-medium-no-m {
     margin: 0;
   }
@@ -645,6 +734,26 @@
 
   .screen-medium-p-right-large {
     padding-right: var(--large);
+  }
+
+  .screen-medium-p-x-large {
+    padding: var(--x-large);
+  }
+
+  .screen-medium-p-top-x-large {
+    padding-top: var(--x-large);
+  }
+
+  .screen-medium-p-bottom-x-large {
+    padding-bottom: var(--x-large);
+  }
+
+  .screen-medium-p-left-x-large {
+    padding-left: var(--x-large);
+  }
+
+  .screen-medium-p-right-x-large {
+    padding-right: var(--x-large);
   }
 
   .screen-medium-no-p {
