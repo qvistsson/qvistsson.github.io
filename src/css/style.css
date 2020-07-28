@@ -156,23 +156,12 @@ footer a:hover {
   box-shadow: 3px 3px 0px var(--theme2);
 }
 
-.angle-deco-container {
-  min-width: 6rem;
-  max-width: 6rem;
-  height: 4rem;
-}
-
 .project-angle-deco {
   border-bottom: 0.1rem solid var(--theme2);
   border-left: 0.1rem solid var(--theme2);
   border-bottom-left-radius: 0.5rem;
-  height: 100%;
   transform: translate(0, -50%);
   
-}
-
-.project {
-  overflow: hidden;
 }
 
 hr {

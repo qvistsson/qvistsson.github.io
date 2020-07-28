@@ -1,8 +1,14 @@
 import React from 'react';
 
-function SiteLogo() {
+function SiteLogo(props) {
   return (
-    <div className="flex-row align-center justify-between m-bottom-large screen-medium-no-m">
+    <div
+      className={
+        props.margin
+          ? 'flex-row align-center justify-between ' + props.margin
+          : 'flex-row align-center justify-between'
+      }
+    >
       <div className="site-logo">
         <p>Q</p>
       </div>
@@ -15,40 +21,46 @@ function SiteLogo() {
 
 function Project(props) {
   return (
-    <div className="project max-width flex-column align-start">
-      <div className="flex-row align-center">
-        <div className="angle-deco-container flex-row align-center overflow-hidden">
-          <div className="project-angle-deco grow"></div>
-          <i className="fas fa-circle m-left-small m-right project-circle"></i>
-        </div>
-        <div className="project-content">
-          <div className="flex-row justify-between align-stretch">
-            <h2 className="proj-title d-inline m-right-small">{props.title}</h2>
-            <div className="flex-row align-center">
-              {props.tags.map((i) => (
-                <p className="intro-body d-inline"><span>{i}</span></p>
-              ))}
-            </div>
-          </div>
-          <p className="intro-body m-top m-bottom">{props.description}</p>
+    <div className="max-width flex-row align-stretch">
+      <div
+        className="flex-row align-center"
+        style={{ minWidth: props.indent, maxWidth: props.indent }}
+      >
+        <div
+          className="project-angle-deco grow"
+          style={{ minHeight: props.decoHeight, maxHeight: props.decoHeight }}
+        ></div>
+        <i className="fas fa-circle m-left-small m-right project-circle"></i>
+      </div>
+      <div className="project-content flex-column grow">
+        <div className="flex-row justify-between">
+          <h2 className="proj-title d-inline m-bottom-small">{props.title}</h2>
           <div className="flex-row">
-            <a
-              href={props.viewLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-social"
-            >
-              <i className="far fa-eye"></i>Go To Project
-            </a>
-            <a
-              href={props.gitLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-social m-left"
-            >
-              <i className="fab fa-github"></i>View Source
-            </a>
+            {props.tags.map((i) => (
+              <p className="intro-body d-inline">
+                <span>{i}</span>
+              </p>
+            ))}
           </div>
+        </div>
+        <p className="intro-body m-bottom-small">{props.description}</p>
+        <div className="flex-row">
+          <a
+            href={props.viewLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-social"
+          >
+            <i className="far fa-eye"></i>Go To Project
+          </a>
+          <a
+            href={props.gitLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-social m-left"
+          >
+            <i className="fab fa-github"></i>View Source
+          </a>
         </div>
       </div>
     </div>
@@ -57,14 +69,10 @@ function Project(props) {
 
 function SubHeader(props) {
   return (
-    <div
-      className={props.margin}
-      id={props.id}
-      style={props.customLeft ? { marginLeft: props.customLeft } : {}}
-    >
-      <div className="sub-header-container flex-row justify-start align-stretch max-width">
-        <h2 className="sub-header">{props.text}</h2>
-      </div>
+    <div className={props.margin}>
+      <h2 id={props.id} className="sub-header d-inline">
+        {props.text}
+      </h2>
     </div>
   );
 }
@@ -94,13 +102,13 @@ function ShowyIndent(props) {
 }
 
 function TextContainer(props) {
-  return <div className="max-width">{props.content}</div>;
+  return <div className={props.margin}>{props.content}</div>;
 }
 
 function ProjectDivider(props) {
   return (
     <div className="project-divider flex-row align-center justify-center max-width m-top-large m-bottom-large">
-      <div style={{marginLeft: "6rem"}}></div>
+      <div style={{ marginLeft: '6rem' }}></div>
       <div className="horizontal-line"></div>
       <p className="proj-div-text">{props.divString}</p>
       <div className="horizontal-line"></div>

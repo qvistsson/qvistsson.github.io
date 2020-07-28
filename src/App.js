@@ -8,10 +8,10 @@ import './css/style.css';
 function App() {
   return (
     <div className="flex-column p-small">
-      <Modules.SiteLogo />
+      <Modules.SiteLogo margin="m-bottom-large" />
       <div
         id="portfolio-content-container"
-        className="flex-column screen-small-m-left-small screen-small-m-right-small screen-medium-m-large"
+        className="flex-column m-bottom-large screen-small-m-left-small screen-small-m-right-small screen-medium-m-left-large screen-medium-m-right-large"
       >
         <Modules.ShowyIndent
           width="9rem"
@@ -25,16 +25,38 @@ function App() {
           text="I'm Qvistsson"
           excl={false}
         />
-        <div className="flex-column screen-medium-m-left-large">
-          <Modules.TextContainer content={Text.Introduction()} />
-          <Modules.SubHeader text="Projects" margin="m-top-large m-bottom" customLeft="6rem"/>
-          <Modules.Project {...Projects.pomodoro} />
+        <div
+          id="indented-content"
+          className="flex-column max-width screen-medium-m-left-large"
+        >
+          <Modules.TextContainer
+            margin="m-bottom-large"
+            content={Text.Introduction()}
+          />
+          <Modules.SubHeader text="Projects" margin="m-bottom-large m-left-x-large" />
+          <Modules.Project
+            {...Projects.pomodoro}
+            indent="6rem"
+            decoHeight="2rem"
+          />
           <Modules.ProjectDivider divString="///" />
-          <Modules.Project {...Projects.calculator} />
+          <Modules.Project
+            {...Projects.calculator}
+            indent="6rem"
+            decoHeight="2rem"
+          />
           <Modules.ProjectDivider divString="///" />
-          <Modules.Project {...Projects.dataviz} />
+          <Modules.Project
+            {...Projects.dataviz}
+            indent="6rem"
+            decoHeight="2rem"
+          />
           <Modules.ProjectDivider divString="///" />
-          <Modules.Project {...Projects.dataviz2} />
+          <Modules.Project
+            {...Projects.dataviz2}
+            indent="6rem"
+            decoHeight="2rem"
+          />
           <Modules.SubHeader
             text="Contact me"
             margin="m-top-large m-bottom"

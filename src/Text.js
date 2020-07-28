@@ -11,7 +11,7 @@ const Introduction = function () {
         on <span>HTML</span> and <span>CSS</span>, and enjoy creating{' '}
         <span>React</span> apps.
       </p>
-      <p className="intro-body m-bottom-small">
+      <p className="intro-body">
         I've also created <span>WordPress</span> themes, <span>D3</span> data
         visualizations and currently I'm studying <span>Bootstrap</span> and{' '}
         <span>Redux</span>.

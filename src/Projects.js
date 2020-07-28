@@ -25,7 +25,7 @@ const Projects = {
   },
   dataviz2: {
       title: 'Data Visualization - Heat Map',
-      description: 'Another data go at data visualization with D3, this time on average temperatures between 1753-2015',
+      description: 'Another data go at data visualization with D3, this time on average temperatures between 1753-2015.',
       tags: ['D3'],
       viewLink: 'https://qvistsson.github.io/heat-map/',
       gitLink: 'https://github.com/qvistsson/heat-map',
