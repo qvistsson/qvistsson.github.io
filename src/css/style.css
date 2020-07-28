@@ -228,3 +228,14 @@ a.link-social:hover {
   color: var(--pop);
   border-color: var(--pop);
 }
+
+.showy-indent {
+  max-width: 6rem;
+}
+
+@media screen and (min-width: 800px)
+{
+  .showy-indent {
+    max-width: 9rem;
+  }
+}

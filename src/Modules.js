@@ -93,8 +93,7 @@ function ShowyIndent(props) {
       }
     >
       <div
-        className="flex-row align-center grow"
-        style={{ maxWidth: props.width }}
+        className="hide screen-small-flex-row align-center grow showy-indent"
       >
         <div className="deco-stretch m-right-small grow"></div>
         <i className="fas fa-circle m-right-small intro-circle"></i>
@@ -121,7 +120,10 @@ function ProjectDivider(props) {
           : 'project-divider flex-row align-center justify-center max-width'
       }
     >
-      <div className="hide screen-small-block" style={{ width: props.indent }}></div>
+      <div
+        className="hide screen-small-block"
+        style={{ width: props.indent }}
+      ></div>
       <div className="horizontal-line"></div>
       <p className="proj-div-text">{props.divString}</p>
       <div className="horizontal-line"></div>
@@ -131,7 +133,13 @@ function ProjectDivider(props) {
 
 function ContactSocials(props) {
   return (
-    <div className={props.margin ? 'flex-column screen-small-flex-row ' + props.margin : 'flex-column screen-small-flex-row'}>
+    <div
+      className={
+        props.margin
+          ? 'flex-column screen-small-flex-row ' + props.margin
+          : 'flex-column screen-small-flex-row'
+      }
+    >
       <a
         href={props.gitLink}
         target="_blank"
