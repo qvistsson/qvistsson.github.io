@@ -28,7 +28,7 @@ const ContactMe = function () {
         any opportunities—or anything, really!—don't hesitate to reach out. Looking forward
         to hearing from you!
       </p>
-      <p className="intro-body m-bottom">You can reach me on:</p>
+      <p className="intro-body">You can reach me on:</p>
     </div>
   );
 };

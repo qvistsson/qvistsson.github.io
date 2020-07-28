@@ -33,37 +33,56 @@ function App() {
             margin="m-bottom-large"
             content={Text.Introduction()}
           />
-          <Modules.SubHeader text="Projects" margin="m-bottom-large m-left-x-large" />
+          <Modules.SubHeader
+            text="Projects"
+            margin="m-bottom-large m-left-x-large"
+          />
           <Modules.Project
             {...Projects.pomodoro}
+            margin="m-bottom-large"
             indent="6rem"
             decoHeight="2rem"
           />
-          <Modules.ProjectDivider divString="///" />
+          <Modules.ProjectDivider
+            indent="6rem"
+            margin="m-bottom-large"
+            divString="///"
+          />
           <Modules.Project
             {...Projects.calculator}
+            margin="m-bottom-large"
             indent="6rem"
             decoHeight="2rem"
           />
-          <Modules.ProjectDivider divString="///" />
+          <Modules.ProjectDivider
+            indent="6rem"
+            margin="m-bottom-large"
+            divString="///"
+          />
           <Modules.Project
             {...Projects.dataviz}
+            margin="m-bottom-large"
             indent="6rem"
             decoHeight="2rem"
           />
-          <Modules.ProjectDivider divString="///" />
+          <Modules.ProjectDivider
+            indent="6rem"
+            margin="m-bottom-large"
+            divString="///"
+          />
           <Modules.Project
             {...Projects.dataviz2}
+            margin="m-bottom-large"
             indent="6rem"
             decoHeight="2rem"
           />
           <Modules.SubHeader
             text="Contact me"
-            margin="m-top-large m-bottom"
+            margin="m-left-x-large m-bottom-large"
             id="contact-info"
           />
-          <Modules.TextContainer content={Text.ContactMe()} />
-          <Modules.ContactSocials />
+          <Modules.TextContainer margin="m-left-x-large m-bottom-small" content={Text.ContactMe()} />
+          <Modules.ContactSocials margin="m-left-x-large" />
         </div>
       </div>
       <Modules.Footer />

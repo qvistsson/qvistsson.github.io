@@ -21,7 +21,13 @@ function SiteLogo(props) {
 
 function Project(props) {
   return (
-    <div className="max-width flex-row align-stretch">
+    <div
+      className={
+        props.margin
+          ? 'max-width flex-row align-stretch ' + props.margin
+          : 'max-width flex-row align-stretch'
+      }
+    >
       <div
         className="flex-row align-center"
         style={{ minWidth: props.indent, maxWidth: props.indent }}
@@ -107,8 +113,15 @@ function TextContainer(props) {
 
 function ProjectDivider(props) {
   return (
-    <div className="project-divider flex-row align-center justify-center max-width m-top-large m-bottom-large">
-      <div style={{ marginLeft: '6rem' }}></div>
+    <div
+      className={
+        props.margin
+          ? 'project-divider flex-row align-center justify-center max-width ' +
+            props.margin
+          : 'project-divider flex-row align-center justify-center max-width'
+      }
+    >
+      <div style={{ width: props.indent }}></div>
       <div className="horizontal-line"></div>
       <p className="proj-div-text">{props.divString}</p>
       <div className="horizontal-line"></div>
@@ -118,46 +131,38 @@ function ProjectDivider(props) {
 
 function ContactSocials(props) {
   return (
-    <div className="max-width flex-column align-start overflow-hidden">
-      <div className="flex-row align-center maxed">
-        <div className="project-angle-deco hide screen-small-display"></div>
-        <i className="fas fa-circle m-left-small project-circle hide screen-small-display"></i>
-        <div className="project-content screen-small-m-left grow">
-          <div className="flex-row justify-around screen-small-justify-start">
-            <a
-              href={props.gitLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-social"
-            >
-              <i className="far fa-envelope"></i>e-mail
-            </a>
-            <a
-              href={props.gitLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-social m-left"
-            >
-              <i className="fab fa-linkedin"></i>LinkedIn
-            </a>
-            <a
-              href={props.gitLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-social m-left"
-            >
-              <i className="fab fa-github"></i>GitHub
-            </a>
-          </div>
-        </div>
-      </div>
+    <div className={props.margin ? 'flex-row ' + props.margin : 'flex-row'}>
+      <a
+        href={props.gitLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link-social"
+      >
+        <i className="far fa-envelope"></i>e-mail
+      </a>
+      <a
+        href={props.gitLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link-social m-left"
+      >
+        <i className="fab fa-linkedin"></i>LinkedIn
+      </a>
+      <a
+        href={props.gitLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link-social m-left"
+      >
+        <i className="fab fa-github"></i>GitHub
+      </a>
     </div>
   );
 }
 
 function Footer() {
   return (
-    <footer className="flex-row justify-center align-center m-top-large screen-medium-no-m">
+    <footer className="flex-row justify-center align-center screen-medium-no-m">
       <p class="footer-text">© Qvistsson 2020</p>
       <i className="fas fa-circle m-left-small m-right-small footer-circle"></i>
       <p class="footer-text">
