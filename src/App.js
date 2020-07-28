@@ -27,7 +27,7 @@ function App() {
         />
         <div className="flex-column screen-medium-m-left-large">
           <Modules.TextContainer content={Text.Introduction()} />
-          <Modules.SubHeader text="Projects" margin="m-top-large m-bottom" />
+          <Modules.SubHeader text="Projects" margin="m-top-large m-left-large m-bottom" />
           <Modules.Project {...Projects.pomodoro} />
           <Modules.ProjectDivider divString="///" />
           <Modules.Project {...Projects.calculator} />

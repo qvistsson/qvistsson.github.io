@@ -105,7 +105,7 @@ function ProjectDivider(props) {
 
 function ContactSocials(props) {
   return (
-    <div className="screen-small-m-left-large max-width flex-column align-start">
+    <div className="max-width flex-column align-start overflow-hidden">
       <div className="flex-row align-center maxed">
         <div className="project-angle-deco hide screen-small-display"></div>
         <i className="fas fa-circle m-left-small project-circle hide screen-small-display"></i>
