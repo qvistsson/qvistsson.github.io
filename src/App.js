@@ -9,7 +9,10 @@ function App() {
   return (
     <div className="flex-column p-small">
       <Modules.SiteLogo />
-      <div id="portfolio-content-container" className="flex-column m-large">
+      <div
+        id="portfolio-content-container"
+        className="flex-column screen-small-m-left-small screen-small-m-right-small screen-medium-m-large"
+      >
         <Modules.ShowyIndent
           width="8.5rem"
           margin="m-bottom-small"
@@ -22,18 +25,24 @@ function App() {
           text="I'm Qvistsson"
           excl={false}
         />
-        <Modules.TextContainer content={Text.Introduction()} />
-        <Modules.SubHeader text="Projects" margin="m-top-large m-bottom" />
-        <Modules.Project {...Projects.pomodoro} />
-        <Modules.ProjectDivider divString="///" />
-        <Modules.Project {...Projects.calculator} />
-        <Modules.ProjectDivider divString="///" />
-        <Modules.Project {...Projects.dataviz} />
-        <Modules.ProjectDivider divString="///" />
-        <Modules.Project {...Projects.dataviz2} />
-        <Modules.SubHeader text="Contact me" margin="m-top-large m-bottom" id="contact-info" />
-        <Modules.TextContainer content={Text.ContactMe()} />
-        <Modules.ContactSocials />
+        <div className="flex-column screen-medium-m-left-large">
+          <Modules.TextContainer content={Text.Introduction()} />
+          <Modules.SubHeader text="Projects" margin="m-top-large m-bottom" />
+          <Modules.Project {...Projects.pomodoro} />
+          <Modules.ProjectDivider divString="///" />
+          <Modules.Project {...Projects.calculator} />
+          <Modules.ProjectDivider divString="///" />
+          <Modules.Project {...Projects.dataviz} />
+          <Modules.ProjectDivider divString="///" />
+          <Modules.Project {...Projects.dataviz2} />
+          <Modules.SubHeader
+            text="Contact me"
+            margin="m-top-large m-bottom"
+            id="contact-info"
+          />
+          <Modules.TextContainer content={Text.ContactMe()} />
+          <Modules.ContactSocials />
+        </div>
       </div>
       <Modules.Footer />
     </div>

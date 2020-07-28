@@ -2,7 +2,7 @@ import React from 'react';
 
 function SiteLogo() {
   return (
-    <div className="flex-row align-center justify-start">
+    <div className="flex-row align-center justify-start m-bottom-large screen-medium-no-m">
       <div className="site-logo">
         <p>Q</p>
       </div>
@@ -13,21 +13,13 @@ function SiteLogo() {
   );
 }
 
-function ProjectsContainer(props) {
-  return (
-    <div className="projects-container m-left-large m-right-large">
-      {props.children}
-    </div>
-  );
-}
-
 function Project(props) {
   return (
-    <div className="project m-left-large max-width flex-column align-start">
+    <div className="project max-width flex-column align-start">
       <div className="flex-row align-center maxed">
-        <div className="project-angle-deco"></div>
-        <i className="fas fa-circle m-left-small project-circle"></i>
-        <div className="project-content m-left grow">
+        <div className="project-angle-deco hide screen-small-display"></div>
+        <i className="fas fa-circle m-left-small project-circle hide screen-small-display"></i>
+        <div className="project-content screen-small-m-left grow">
           <div className="flex-row justify-between align-stretch">
             <h2 className="proj-title d-inline m-right-small">{props.title}</h2>
             <div className="flex-row align-center">
@@ -64,7 +56,7 @@ function Project(props) {
 function SubHeader(props) {
   return (
     <div className={props.margin} id={props.id}>
-      <div className="sub-header-container flex-row justify-start align-stretch max-width m-left-large">
+      <div className="sub-header-container flex-row justify-start align-stretch max-width">
         <div className="sub-header-deco-div"></div>
         <h2 className="sub-header">{props.text}</h2>
         <div className="sub-header-deco-div"></div>
@@ -98,12 +90,12 @@ function ShowyIndent(props) {
 }
 
 function TextContainer(props) {
-  return <div className="m-left-large max-width">{props.content}</div>;
+  return <div className="max-width">{props.content}</div>;
 }
 
 function ProjectDivider(props) {
   return (
-    <div className="project-divider flex-row align-center justify-center m-left-large max-width m-top-large m-bottom-large">
+    <div className="project-divider flex-row align-center justify-center max-width m-top-large m-bottom-large">
       <div className="horizontal-line"></div>
       <p className="proj-div-text">{props.divString}</p>
       <div className="horizontal-line"></div>
@@ -113,12 +105,12 @@ function ProjectDivider(props) {
 
 function ContactSocials(props) {
   return (
-    <div className="project m-left-large max-width flex-column align-start">
+    <div className="screen-small-m-left-large max-width flex-column align-start">
       <div className="flex-row align-center maxed">
-        <div className="project-angle-deco"></div>
-        <i className="fas fa-circle m-left-small project-circle"></i>
-        <div className="project-content m-left grow">
-          <div className="flex-row">
+        <div className="project-angle-deco hide screen-small-display"></div>
+        <i className="fas fa-circle m-left-small project-circle hide screen-small-display"></i>
+        <div className="project-content screen-small-m-left grow">
+          <div className="flex-row justify-around screen-small-justify-start">
             <a
               href={props.gitLink}
               target="_blank"
@@ -152,7 +144,7 @@ function ContactSocials(props) {
 
 function Footer() {
   return (
-    <footer className="flex-row justify-center align-center">
+    <footer className="flex-row justify-center align-center m-top-large screen-medium-no-m">
       <p class="footer-text">© Qvistsson 2020</p>
       <i className="fas fa-circle m-left-small m-right-small footer-circle"></i>
       <p class="footer-text">
@@ -183,7 +175,6 @@ function Footer() {
 export {
   SiteLogo,
   Project,
-  ProjectsContainer,
   SubHeader,
   ShowyIndent,
   TextContainer,
