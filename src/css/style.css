@@ -143,28 +143,32 @@ footer a:hover {
   margin-bottom: 3px;
   font-weight: 800;
   font-size: 1.7rem;
-  background-color: var(--theme2);
-  color: white;
+  background-color: var(--bg);
+  color: var(--theme2);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 3rem;
   height: 3rem;
+  border: 1px solid var(--theme2);
   border-radius: 0.5rem;
-  box-shadow: 3px 3px 0px var(--theme1);
-  text-shadow: 1px 1px 0px var(--theme1);
+  box-shadow: 3px 3px 0px var(--theme2);
+}
+
+.angle-deco-container {
+  min-width: 6rem;
+  max-width: 6rem;
+  height: 4rem;
 }
 
 .project-angle-deco {
-  max-width: 3rem;
-  min-width: 3rem;
-  min-height: 3rem;
-  max-height: 3rem;
   border-bottom: 0.1rem solid var(--theme2);
   border-left: 0.1rem solid var(--theme2);
   border-bottom-left-radius: 0.5rem;
-  transform: translateY(-50%);
+  height: 100%;
+  transform: translate(0, -50%);
+  
 }
 
 .project {
@@ -182,8 +186,8 @@ hr {
 
 .proj-title {
   font-family: 'Source Code Pro', monospace;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 600;
   background-color: var(--theme2);
   color: white;
   padding: 0.2rem;

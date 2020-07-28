@@ -2,11 +2,11 @@ import React from 'react';
 
 function SiteLogo() {
   return (
-    <div className="flex-row align-center justify-start m-bottom-large screen-medium-no-m">
+    <div className="flex-row align-center justify-between m-bottom-large screen-medium-no-m">
       <div className="site-logo">
         <p>Q</p>
       </div>
-      <a className="contact-top m-left-large" href="#contact-info">
+      <a className="contact-top" href="#contact-info">
         Contact
       </a>
     </div>
@@ -16,15 +16,17 @@ function SiteLogo() {
 function Project(props) {
   return (
     <div className="project max-width flex-column align-start">
-      <div className="flex-row align-center maxed">
-        <div className="project-angle-deco hide screen-small-display"></div>
-        <i className="fas fa-circle m-left-small project-circle hide screen-small-display"></i>
-        <div className="project-content screen-small-m-left grow">
+      <div className="flex-row align-center">
+        <div className="angle-deco-container flex-row align-center overflow-hidden">
+          <div className="project-angle-deco grow"></div>
+          <i className="fas fa-circle m-left-small m-right project-circle"></i>
+        </div>
+        <div className="project-content">
           <div className="flex-row justify-between align-stretch">
             <h2 className="proj-title d-inline m-right-small">{props.title}</h2>
             <div className="flex-row align-center">
               {props.tags.map((i) => (
-                <p className="proj-tag d-inline">{i}</p>
+                <p className="intro-body d-inline"><span>{i}</span></p>
               ))}
             </div>
           </div>
@@ -55,11 +57,13 @@ function Project(props) {
 
 function SubHeader(props) {
   return (
-    <div className={props.margin} id={props.id}>
+    <div
+      className={props.margin}
+      id={props.id}
+      style={props.customLeft ? { marginLeft: props.customLeft } : {}}
+    >
       <div className="sub-header-container flex-row justify-start align-stretch max-width">
-        <div className="sub-header-deco-div"></div>
         <h2 className="sub-header">{props.text}</h2>
-        <div className="sub-header-deco-div"></div>
       </div>
     </div>
   );
@@ -96,6 +100,7 @@ function TextContainer(props) {
 function ProjectDivider(props) {
   return (
     <div className="project-divider flex-row align-center justify-center max-width m-top-large m-bottom-large">
+      <div style={{marginLeft: "6rem"}}></div>
       <div className="horizontal-line"></div>
       <p className="proj-div-text">{props.divString}</p>
       <div className="horizontal-line"></div>

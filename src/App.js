@@ -14,20 +14,20 @@ function App() {
         className="flex-column screen-small-m-left-small screen-small-m-right-small screen-medium-m-large"
       >
         <Modules.ShowyIndent
-          width="8.5rem"
+          width="9rem"
           margin="m-bottom-small"
           text="Hi there"
           excl={true}
         />
         <Modules.ShowyIndent
-          width="11.5rem"
+          width="9rem"
           margin="m-bottom-large"
           text="I'm Qvistsson"
           excl={false}
         />
         <div className="flex-column screen-medium-m-left-large">
           <Modules.TextContainer content={Text.Introduction()} />
-          <Modules.SubHeader text="Projects" margin="m-top-large m-left-large m-bottom" />
+          <Modules.SubHeader text="Projects" margin="m-top-large m-bottom" customLeft="6rem"/>
           <Modules.Project {...Projects.pomodoro} />
           <Modules.ProjectDivider divString="///" />
           <Modules.Project {...Projects.calculator} />
