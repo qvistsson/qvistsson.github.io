@@ -49,7 +49,7 @@ function App() {
             divString="///"
           />
           <Modules.Project
-            {...Projects.calculator}
+            {...Projects.dataviz}
             margin="m-bottom-large"
             indent="6rem"
             decoHeight="2rem"
@@ -60,7 +60,7 @@ function App() {
             divString="///"
           />
           <Modules.Project
-            {...Projects.dataviz}
+            {...Projects.calculator}
             margin="m-bottom-large"
             indent="6rem"
             decoHeight="2rem"
