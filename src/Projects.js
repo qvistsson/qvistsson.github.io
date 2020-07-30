@@ -39,6 +39,14 @@ const Projects = {
     viewLink: 'https://qvistsson.github.io/markdown-previewer-portfolio/',
     gitLink: 'https://github.com/qvistsson/markdown-previewer-portfolio',
   },
+  drummachine: {
+    title: 'Drum Machine',
+    description:
+      'A simple drum machine with two sound kits and Bootstrap-styled UI.',
+    tags: ['React', 'Bootstrap'],
+    viewLink: 'https://qvistsson.github.io/drum-machine-portfolio/',
+    gitLink: 'https://github.com/qvistsson/drum-machine-portfolio',
+  },
 };
 
 export default Projects;

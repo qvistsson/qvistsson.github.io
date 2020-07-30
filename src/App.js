@@ -81,12 +81,26 @@ function App() {
             margin="m-bottom-large"
             divString="///"
           />
+          <Modules.Project
+            {...Projects.drummachine}
+            margin="m-bottom-large"
+            indent="6rem"
+            decoHeight="2rem"
+          />
+          <Modules.ProjectDivider
+            indent="6rem"
+            margin="m-bottom-large"
+            divString="///"
+          />
           <Modules.SubHeader
             text="Contact me"
             margin="screen-small-m-left-x-large m-bottom-large"
             id="contact-info"
           />
-          <Modules.TextContainer margin="screen-small-m-left-x-large m-bottom-small" content={Text.ContactMe()} />
+          <Modules.TextContainer
+            margin="screen-small-m-left-x-large m-bottom-small"
+            content={Text.ContactMe()}
+          />
           <Modules.ContactSocials margin="screen-small-m-left-x-large" />
         </div>
       </div>
