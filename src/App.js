@@ -71,7 +71,7 @@ function App() {
             divString="///"
           />
           <Modules.Project
-            {...Projects.dataviz2}
+            {...Projects.markdownpreviewer}
             margin="m-bottom-large"
             indent="6rem"
             decoHeight="2rem"

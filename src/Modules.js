@@ -43,7 +43,7 @@ function Project(props) {
           <h2 className="proj-title d-inline m-bottom-small">{props.title}</h2>
           <div className="flex-row">
             {props.tags.map((i) => (
-              <p className="intro-body d-inline">
+              <p className="intro-body d-inline m-left-small">
                 <span>{i}</span>
               </p>
             ))}
