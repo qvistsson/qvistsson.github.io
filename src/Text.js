@@ -4,17 +4,21 @@ const Introduction = function () {
   return (
     <div>
       <p className="intro-body m-bottom-small">
-        Or less uniquely, Oscar—that's my name. And I've been all about front
-        end development since April 2020, when I realized coding and design was
-        my jam. Since then I've been on a relatively intense self-studying
-        journey, and I've already learned a bunch of things. I got a good handle
-        on <span>HTML</span> and <span>CSS</span>, and enjoy creating{' '}
-        <span>React</span> apps.
+        And I've been all about front end development since April 2020, when I
+        realized coding and design was my jam. Since then I've been committed to
+        self-studying, and every day I'm learning something new. I have a great
+        handle on <span>HTML</span>, <span>JavaScript</span> and{' '}
+        <span>CSS</span>, and enjoy creating <span>React</span> apps.
       </p>
-      <p className="intro-body">
+      <p className="intro-body m-bottom-small">
         I've also created <span>WordPress</span> themes, <span>D3</span> data
         visualizations and currently I'm studying <span>Bootstrap</span> and{' '}
         <span>Redux</span>.
+      </p>
+      <p className="intro-body">
+        My learning process has been guided by the curriculum at FreeCodeCamp, and below
+        you'll find some of the projects I've created as part of their
+        certifications.
       </p>
     </div>
   );
@@ -24,11 +28,10 @@ const ContactMe = function () {
   return (
     <div>
       <p className="intro-body m-bottom-small">
-        I can't wait to get into this field, so if you want to reach out to discuss
-        any opportunities—or anything, really!—don't hesitate to reach out. Looking forward
-        to hearing from you!
+        I'm currently looking for new opportunities, so don't hesitate to reach
+        out if you'd like to work together.
       </p>
-      <p className="intro-body">You can reach me on:</p>
+      <p className="intro-body">You can reach me via:</p>
     </div>
   );
 };
