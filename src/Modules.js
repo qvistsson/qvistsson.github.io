@@ -92,9 +92,7 @@ function ShowyIndent(props) {
           : 'flex-row align-center'
       }
     >
-      <div
-        className="hide screen-small-flex-row align-center grow showy-indent"
-      >
+      <div className="hide screen-small-flex-row align-center grow showy-indent">
         <div className="deco-stretch m-right-small grow"></div>
         <i className="fas fa-circle m-right-small intro-circle"></i>
       </div>
@@ -141,15 +139,14 @@ function ContactSocials(props) {
       }
     >
       <a
-        href={props.gitLink}
-        target="_blank"
-        rel="noopener noreferrer"
+        id="obf-target"
+        href="mailto:enable-javascript@for-email.com"
         className="link-social"
       >
         <i className="far fa-envelope"></i>e-mail
       </a>
       <a
-        href={props.gitLink}
+        href="https://www.linkedin.com/in/qvistdev09/"
         target="_blank"
         rel="noopener noreferrer"
         className="link-social m-top-small screen-small-no-m-top screen-small-m-left"
@@ -157,7 +154,7 @@ function ContactSocials(props) {
         <i className="fab fa-linkedin"></i>LinkedIn
       </a>
       <a
-        href={props.gitLink}
+        href="https://github.com/qvistdev09"
         target="_blank"
         rel="noopener noreferrer"
         className="link-social m-top-small screen-small-no-m-top screen-small-m-left"
@@ -171,7 +168,7 @@ function ContactSocials(props) {
 function Footer() {
   return (
     <footer className="flex-column screen-small-flex-row justify-center align-center">
-      <p class="footer-text">© Qvistsson 2020</p>
+      <p class="footer-text">© Oscar Lindqvist 2020</p>
       <i className="fas fa-circle hide screen-small-block m-left-small m-right-small footer-circle"></i>
       <p class="footer-text">
         Powered by{' '}
