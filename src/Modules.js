@@ -199,7 +199,7 @@ function Footer() {
 function Portrait() {
   return (
     <div id="portrait-wrapper">
-      <div id="img-wrapper" className="screen-small-m-small screen-medium-m">
+      <div id="img-wrapper" className="m-small screen-medium-m">
         <img
           class="portrait-img"
           src={PortraitImg}
