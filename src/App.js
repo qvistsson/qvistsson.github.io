@@ -24,7 +24,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="flex-column p-small">
+      <div className="flex-column p-small pos-rel">
+        <Modules.Portrait />
         <Modules.SiteLogo margin="m-bottom-large" />
         <div
           id="portfolio-content-container"

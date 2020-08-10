@@ -1,4 +1,5 @@
 import React from 'react';
+import PortraitImg from './media/portfolioportrait.jpg';
 
 function SiteLogo(props) {
   return (
@@ -195,6 +196,20 @@ function Footer() {
   );
 }
 
+function Portrait() {
+  return (
+    <div id="portrait-wrapper">
+      <div id="img-wrapper" className="screen-small-m-small screen-medium-m">
+        <img
+          class="portrait-img"
+          src={PortraitImg}
+          alt="Portrait of Oscar Lindqvist"
+        />
+      </div>
+    </div>
+  );
+}
+
 export {
   SiteLogo,
   Project,
@@ -204,4 +219,5 @@ export {
   ProjectDivider,
   ContactSocials,
   Footer,
+  Portrait,
 };
