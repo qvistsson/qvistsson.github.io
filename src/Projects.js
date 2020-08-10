@@ -47,6 +47,14 @@ const Projects = {
     viewLink: 'https://qvistdev09.github.io/drum-machine-portfolio/',
     gitLink: 'https://github.com/qvistdev09/drum-machine-portfolio',
   },
+  comparecountries: {
+    title: 'Compare Countries',
+    description:
+      'A graphical interface for comparing information about different countries. Data is fetched from the REST Countries API. Features a cache for already viewed information to reduce API calls, sortable data, and two view modes: spreadsheet and graph view.',
+    tags: ['React', 'API'],
+    viewLink: 'https://qvistdev09.github.io/compare-countries/',
+    gitLink: 'https://github.com/qvistdev09/compare-countries',
+  },
 };
 
 export default Projects;

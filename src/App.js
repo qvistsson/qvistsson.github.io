@@ -55,6 +55,17 @@ class App extends React.Component {
               margin="m-bottom-large screen-small-m-left-x-large"
             />
             <Modules.Project
+              {...Projects.comparecountries}
+              margin="m-bottom-large"
+              indent="6rem"
+              decoHeight="2rem"
+            />
+            <Modules.ProjectDivider
+              indent="6rem"
+              margin="m-bottom-large"
+              divString="///"
+            />
+            <Modules.Project
               {...Projects.pomodoro}
               margin="m-bottom-large"
               indent="6rem"

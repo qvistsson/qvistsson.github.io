@@ -8,7 +8,7 @@ const Introduction = function () {
         realized coding and design was my jam. Since then I've been committed to
         self-studying, and every day I'm learning something new. I have a great
         handle on <span>HTML</span>, <span>JavaScript</span> and{' '}
-        <span>CSS</span>, and enjoy creating <span>React</span> apps.
+        <span>CSS</span>, and I'm especially excited about creating <span>React</span> apps.
       </p>
       <p className="intro-body m-bottom-small">
         I've also created <span>WordPress</span> themes, <span>D3</span> data
@@ -16,9 +16,10 @@ const Introduction = function () {
         <span>Redux</span>.
       </p>
       <p className="intro-body">
-        My learning process has been guided by the curriculum at FreeCodeCamp, and below
-        you'll find some of the projects I've created as part of their
-        certifications.
+        My learning process has been guided by the curriculum at
+        FreeCodeCamp.com, where I've earned four certificates so far. I also
+        learn by constantly creating new projects and researching different
+        approaches, methods and frameworks.
       </p>
     </div>
   );
