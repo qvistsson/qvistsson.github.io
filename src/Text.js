@@ -21,16 +21,14 @@ const Introduction = [
   </p>,
 ];
 
-const ContactMe = function () {
-  return (
-    <div>
-      <p className="intro-body m-bottom-small">
-        I'm currently looking for new opportunities, so don't hesitate to reach
-        out if you'd like to work together.
-      </p>
-      <p className="intro-body">You can reach me via:</p>
-    </div>
-  );
-};
+const ContactMe = [
+  <div>
+    <p className="Style-intro-body m-bottom-small">
+      I'm currently looking for new opportunities, so don't hesitate to reach
+      out if you'd like to work together.
+    </p>
+    <p className="Style-intro-body">You can reach me via:</p>
+  </div>,
+];
 
 export { Introduction, ContactMe };

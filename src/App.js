@@ -86,6 +86,23 @@ class App extends React.Component {
             ])}
           </div>
         </div>
+        <div className="flex-column full-height p-small pos-rel">
+          <div className="flex-column screen-small-m-left-small screen-small-m-right-small screen-medium-m-left-large screen-medium-m-right-large p-top">
+            <Portrait />
+            <IndentedHeader
+              margin="m-bottom-large"
+              text="Contact me"
+              type="light"
+              excl={true}
+            />
+            <div className="flex-column screen-medium-m-left-large Style-max-width">
+              <TextContainer
+                margin="m-bottom-large"
+                content={Text.ContactMe}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
