@@ -1,0 +1,14 @@
+.Divider-div {
+  width: 100%;
+  opacity: 0.4;
+}
+
+.Divider-horizontal-line {
+  border-bottom: 0.1rem solid white;
+  flex: 1;
+}
+
+.Divider-divstring {
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+}

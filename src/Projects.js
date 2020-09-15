@@ -1,5 +1,5 @@
-const Projects = {
-  pomodoro: {
+const Projects = [
+  {
     title: 'Pomodoro Clock',
     description:
       'A version of the classic productivity tool, with configurable length pomodoros—and breaks!',
@@ -7,7 +7,7 @@ const Projects = {
     viewLink: 'https://qvistdev09.github.io/pomodoro-clock-portfolio/',
     gitLink: 'https://github.com/qvistdev09/pomodoro-clock-portfolio',
   },
-  calculator: {
+  {
     title: 'Calculator',
     description:
       'A calculator created in React, which proved to be a good practice in state-based logic.',
@@ -15,7 +15,7 @@ const Projects = {
     viewLink: 'https://qvistdev09.github.io/javascript-calculator-portfolio/',
     gitLink: 'https://github.com/qvistdev09/javascript-calculator-portfolio',
   },
-  dataviz: {
+  {
     title: 'Choropleth Map',
     description:
       'Data visualization practice with the D3 library, using data on educational attainment in the US.',
@@ -23,7 +23,7 @@ const Projects = {
     viewLink: 'https://qvistdev09.github.io/choropleth-map-portfolio/',
     gitLink: 'https://github.com/qvistdev09/choropleth-map-portfolio',
   },
-  dataviz2: {
+  {
     title: 'Heat Map',
     description:
       'Another data go at data visualization with D3, this time on average temperatures between 1753-2015.',
@@ -31,7 +31,7 @@ const Projects = {
     viewLink: 'https://qvistdev09.github.io/heat-map/',
     gitLink: 'https://github.com/qvistdev09/heat-map',
   },
-  markdownpreviewer: {
+  {
     title: 'Markdown Previewer',
     description:
       'A markdown previewer created in React, using the Marked library and DOMPurify for sanitizing user input.',
@@ -39,7 +39,7 @@ const Projects = {
     viewLink: 'https://qvistdev09.github.io/markdown-previewer-portfolio/',
     gitLink: 'https://github.com/qvistdev09/markdown-previewer-portfolio',
   },
-  drummachine: {
+  {
     title: 'Drum Machine',
     description:
       'A simple drum machine with two sound kits and Bootstrap-styled UI.',
@@ -47,7 +47,7 @@ const Projects = {
     viewLink: 'https://qvistdev09.github.io/drum-machine-portfolio/',
     gitLink: 'https://github.com/qvistdev09/drum-machine-portfolio',
   },
-  comparecountries: {
+  {
     title: 'Compare Countries',
     description:
       'A graphical interface for comparing information about different countries. Data is fetched from the REST Countries API. Features a cache for already viewed information to reduce API calls, sortable data, and two view modes: spreadsheet and graph view.',
@@ -55,6 +55,6 @@ const Projects = {
     viewLink: 'https://qvistdev09.github.io/compare-countries/',
     gitLink: 'https://github.com/qvistdev09/compare-countries',
   },
-};
+];
 
 export default Projects;

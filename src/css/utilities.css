@@ -15,6 +15,10 @@
 
 /* Utilities not get given screen size variations */
 
+.d-inline {
+  display: inline;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }

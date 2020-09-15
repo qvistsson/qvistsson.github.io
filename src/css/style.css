@@ -11,3 +11,43 @@
 body {
   background-color: var(--bg);
 }
+
+.Style-max-width {
+  max-width: 45rem;
+}
+
+.Style-intro-body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.5rem;
+}
+
+.Style-intro-body-dark {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  line-height: 1.5rem;
+}
+
+.Style-intro-body span {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 0.1rem;
+  border-bottom: 1.5px dashed var(--theme2);
+  border-color: var(--theme2);
+  color: var(--pop);
+}
+
+.Style-intro-body-dark span {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 0.1rem;
+  border-bottom: 1.5px dashed white;
+  border-color: white;
+  color: var(--pop-light);
+}
