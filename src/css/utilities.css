@@ -1,9 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /*
-  border: 1px solid black;
-  */
+  box-sizing: border-box;
 }
 
 /* Variables */
@@ -27,6 +25,14 @@
 
 .maxed {
   width: 100%;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.pos-rel {
+  position: relative;
 }
 
 /* Standard options (standard should be thought of as extra-small, the default option */

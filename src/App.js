@@ -1,9 +1,12 @@
 import React from 'react';
-import * as Modules from './Modules';
-import * as Text from './Text';
-import Projects from './Projects';
 import './css/utilities.css';
 import './css/style.css';
+
+// Components
+
+import SiteLogo from './components/SiteLogo';
+import ContactLink from './components/ContactLink';
+import Portrait from './components/Portrait';
 
 class App extends React.Component {
   componentDidMount() {
@@ -24,116 +27,14 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="flex-column p-small pos-rel">
-        <Modules.Portrait />
-        <Modules.SiteLogo margin="m-bottom-large" />
-        <div
-          id="portfolio-content-container"
-          className="flex-column m-bottom-large screen-small-m-left-small screen-small-m-right-small screen-medium-m-left-large screen-medium-m-right-large"
-        >
-          <Modules.ShowyIndent
-            width="9rem"
-            margin="m-bottom-small"
-            text="Hi there"
-            excl={true}
-          />
-          <Modules.ShowyIndent
-            width="9rem"
-            margin="m-bottom-large"
-            text="I'm Oscar"
-            excl={false}
-          />
-          <div
-            id="indented-content"
-            className="flex-column max-width screen-medium-m-left-large"
-          >
-            <Modules.TextContainer
-              margin="m-bottom-large"
-              content={Text.Introduction()}
-            />
-            <Modules.SubHeader
-              text="Projects"
-              margin="m-bottom-large screen-small-m-left-x-large"
-            />
-            <Modules.Project
-              {...Projects.comparecountries}
-              margin="m-bottom-large"
-              indent="6rem"
-              decoHeight="2rem"
-            />
-            <Modules.ProjectDivider
-              indent="6rem"
-              margin="m-bottom-large"
-              divString="///"
-            />
-            <Modules.Project
-              {...Projects.pomodoro}
-              margin="m-bottom-large"
-              indent="6rem"
-              decoHeight="2rem"
-            />
-            <Modules.ProjectDivider
-              indent="6rem"
-              margin="m-bottom-large"
-              divString="///"
-            />
-            <Modules.Project
-              {...Projects.dataviz}
-              margin="m-bottom-large"
-              indent="6rem"
-              decoHeight="2rem"
-            />
-            <Modules.ProjectDivider
-              indent="6rem"
-              margin="m-bottom-large"
-              divString="///"
-            />
-            <Modules.Project
-              {...Projects.calculator}
-              margin="m-bottom-large"
-              indent="6rem"
-              decoHeight="2rem"
-            />
-            <Modules.ProjectDivider
-              indent="6rem"
-              margin="m-bottom-large"
-              divString="///"
-            />
-            <Modules.Project
-              {...Projects.markdownpreviewer}
-              margin="m-bottom-large"
-              indent="6rem"
-              decoHeight="2rem"
-            />
-            <Modules.ProjectDivider
-              indent="6rem"
-              margin="m-bottom-large"
-              divString="///"
-            />
-            <Modules.Project
-              {...Projects.drummachine}
-              margin="m-bottom-large"
-              indent="6rem"
-              decoHeight="2rem"
-            />
-            <Modules.ProjectDivider
-              indent="6rem"
-              margin="m-bottom-large"
-              divString="///"
-            />
-            <Modules.SubHeader
-              text="Contact me"
-              margin="screen-small-m-left-x-large m-bottom-large"
-              id="contact-info"
-            />
-            <Modules.TextContainer
-              margin="screen-small-m-left-x-large m-bottom-small"
-              content={Text.ContactMe()}
-            />
-            <Modules.ContactSocials margin="screen-small-m-left-x-large" />
+      <div id="site-container" className="flex-column">
+        <div className="flex-column full-height p-small pos-rel">
+          <div className="maxed flex-row justify-between">
+            <SiteLogo />
+            <ContactLink />
+            <Portrait />
           </div>
         </div>
-        <Modules.Footer />
       </div>
     );
   }
