@@ -5,8 +5,8 @@ const Socials = ({ margin }) => (
   <div
     className={
       margin
-        ? 'flex-column screen-small-flex-row ' + margin
-        : 'flex-column screen-small-flex-row'
+        ? 'flex-column ' + margin
+        : 'flex-column'
     }
   >
     <a
@@ -20,7 +20,7 @@ const Socials = ({ margin }) => (
       href="https://www.linkedin.com/in/qvistdev09/"
       target="_blank"
       rel="noopener noreferrer"
-      className="Socials-link m-top-small screen-small-no-m-top screen-small-m-left"
+      className="Socials-link m-top-small"
     >
       <i className="fab fa-linkedin"></i>LinkedIn
     </a>
@@ -28,7 +28,7 @@ const Socials = ({ margin }) => (
       href="https://github.com/qvistdev09"
       target="_blank"
       rel="noopener noreferrer"
-      className="Socials-link m-top-small screen-small-no-m-top screen-small-m-left"
+      className="Socials-link m-top-small"
     >
       <i className="fab fa-github"></i>GitHub
     </a>
