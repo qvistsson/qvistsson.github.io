@@ -17,6 +17,10 @@ import Divider from './components/Divider';
 import * as Text from './Text';
 import Projects from './Projects';
 
+// media
+import portrait from './media/portfolioportrait2.png';
+import bgimg from './media/bg.png';
+
 class App extends React.Component {
   /* componentDidMount() {
     const target = document.getElementById('obf-target');
@@ -43,7 +47,7 @@ class App extends React.Component {
             <ContactLink />
           </div>
           <div className="flex-column screen-small-m-left-small screen-small-m-right-small screen-medium-m-left-large screen-medium-m-right-large">
-            <Portrait />
+            <Portrait img={portrait} />
             <IndentedHeader
               margin="m-bottom-small"
               text="Hi there"
@@ -88,7 +92,7 @@ class App extends React.Component {
         </div>
         <div className="flex-column full-height p-small pos-rel">
           <div className="flex-column screen-small-m-left-small screen-small-m-right-small screen-medium-m-left-large screen-medium-m-right-large p-top">
-            <Portrait />
+          <Portrait img={bgimg} />
             <IndentedHeader
               margin="m-bottom-large"
               text="Contact me"
@@ -96,10 +100,7 @@ class App extends React.Component {
               excl={true}
             />
             <div className="flex-column screen-medium-m-left-large Style-max-width">
-              <TextContainer
-                margin="m-bottom-large"
-                content={Text.ContactMe}
-              />
+              <TextContainer margin="m-bottom-large" content={Text.ContactMe} />
             </div>
           </div>
         </div>
