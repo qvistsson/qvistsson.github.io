@@ -20,6 +20,7 @@ import Projects from './Projects';
 // media
 import portrait from './media/portfolioportrait2.png';
 import bgimg from './media/bg.png';
+import bgimg2 from './media/bg2.png';
 
 class App extends React.Component {
   /* componentDidMount() {
@@ -69,9 +70,9 @@ class App extends React.Component {
           </div>
         </div>
         <div
-          className="flex-column full-height p-left-small p-right-small p-top"
-          style={{ backgroundColor: 'var(--theme2)' }}
+          className="flex-column full-height p-left-small p-right-small p-top pos-rel"
         >
+          <Portrait img={bgimg2} color="var(--theme2)" />
           <div className="flex-column screen-small-m-left-small screen-small-m-right-small screen-medium-m-left-large screen-medium-m-right-large">
             <IndentedHeader
               margin="m-bottom-large"
@@ -92,7 +93,7 @@ class App extends React.Component {
         </div>
         <div className="flex-column full-height p-small pos-rel">
           <div className="flex-column screen-small-m-left-small screen-small-m-right-small screen-medium-m-left-large screen-medium-m-right-large p-top">
-          <Portrait img={bgimg} />
+            <Portrait img={bgimg} />
             <IndentedHeader
               margin="m-bottom-large"
               text="Contact me"
