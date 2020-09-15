@@ -11,6 +11,7 @@ import IndentedHeader from './components/IndentedHeader';
 import TextContainer from './components/TextContainer';
 import Project from './components/Project';
 import Divider from './components/Divider';
+import Socials from './components/Socials';
 
 // Data content
 
@@ -23,7 +24,7 @@ import bgimg from './media/bg.png';
 import bgimg2 from './media/bg2.png';
 
 class App extends React.Component {
-  /* componentDidMount() {
+  componentDidMount() {
     const target = document.getElementById('obf-target');
     window.addEventListener(
       'scroll',
@@ -37,7 +38,7 @@ class App extends React.Component {
       },
       { once: true, passive: true }
     );
-  } */
+  }
 
   render() {
     return (
@@ -101,7 +102,8 @@ class App extends React.Component {
               excl={true}
             />
             <div className="flex-column screen-medium-m-left-large Style-max-width">
-              <TextContainer margin="m-bottom-large" content={Text.ContactMe} />
+              <TextContainer margin="m-bottom-small" content={Text.ContactMe} />
+              <Socials />
             </div>
           </div>
         </div>

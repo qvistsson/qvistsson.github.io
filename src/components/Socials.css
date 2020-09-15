@@ -1,0 +1,22 @@
+.Socials-link {
+  color: var(--theme2);
+  text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--theme2);
+}
+
+.Socials-link i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.Socials-link:hover {
+  color: var(--pop);
+  border-color: var(--pop);
+}
