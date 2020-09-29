@@ -8,6 +8,10 @@
   --clickable: rgb(65, 182, 11);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg);
 }

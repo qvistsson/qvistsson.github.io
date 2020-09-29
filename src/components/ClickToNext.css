@@ -1,0 +1,25 @@
+.ClickToNext-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.ClickToNext-icon {
+  font-size: 1rem;
+  color: var(--text);
+  transition: transform 0.1s;
+}
+
+.ClickToNext-link:hover .ClickToNext-icon {
+    transform: translateY(25%);
+}
+
+@media screen and (max-width: 340px) {
+    .ClickToNext-icon {
+        display: none;
+    }
+}

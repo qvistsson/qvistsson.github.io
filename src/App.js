@@ -13,6 +13,7 @@ import Project from './components/Project';
 import Divider from './components/Divider';
 import Socials from './components/Socials';
 import Footer from './components/Footer';
+import ClickToNext from './components/ClickToNext';
 
 // Data content
 
@@ -70,8 +71,12 @@ class App extends React.Component {
               />
             </div>
           </div>
+          <ClickToNext />
         </div>
-        <div className="flex-column full-height p-left-small p-right-small p-top pos-rel">
+        <div
+          className="flex-column full-height p-left-small p-right-small p-top pos-rel"
+          id="projects-anchor"
+        >
           <Portrait img={bgimg2} color="var(--theme2)" />
           <div className="flex-column screen-small-m-left-small screen-small-m-right-small screen-medium-m-left-large screen-medium-m-right-large">
             <IndentedHeader
@@ -86,15 +91,20 @@ class App extends React.Component {
                 margin="m-bottom-large"
                 indent="6rem"
                 decoHeight="2rem"
+                keystring={project.title}
+                key={project.title + "-project"}
               />,
-              <Divider indent="6rem" margin="m-bottom-large" divString="///" />,
+              <Divider
+                indent="6rem"
+                margin="m-bottom-large"
+                divString="///"
+                keystring={project.title}
+                key={project.title + "divider"}
+              />,
             ])}
           </div>
         </div>
-        <div
-          className="flex-column full-height p-small pos-rel"
-          id="contact-info"
-        >
+        <div className="flex-column full-height p-small pos-rel">
           <div className="flex-column screen-small-m-left-small screen-small-m-right-small screen-medium-m-left-large screen-medium-m-right-large p-top">
             <Portrait img={bgimg} />
             <IndentedHeader
@@ -103,7 +113,10 @@ class App extends React.Component {
               type="light"
               excl={true}
             />
-            <div className="flex-column screen-medium-p-left-x-large Style-max-width">
+            <div
+              className="flex-column screen-medium-p-left-x-large Style-max-width"
+              id="contact-info"
+            >
               <TextContainer margin="m-bottom-small" content={Text.ContactMe} />
               <Socials />
             </div>

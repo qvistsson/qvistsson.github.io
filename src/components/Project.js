@@ -1,13 +1,14 @@
 import React from 'react';
 import './Project.css';
 
-const Project = ({ Project, margin, indent, decoHeight }) => (
+const Project = ({ Project, margin, indent, decoHeight, keystring }) => (
   <div
     className={
       margin
         ? 'Style-max-width flex-row align-stretch ' + margin
         : 'Style-max-width flex-row align-stretch'
     }
+    key={keystring}
   >
     <div
       className="hide screen-small-flex-row align-center"
@@ -26,7 +27,7 @@ const Project = ({ Project, margin, indent, decoHeight }) => (
         </h2>
         <div className="flex-row">
           {Project.tags.map((i) => (
-            <p className="Style-intro-body-dark d-inline m-left-small">
+            <p className="Style-intro-body-dark d-inline m-left-small" key={"tag" + i}>
               <span>{i}</span>
             </p>
           ))}
