@@ -20,9 +20,9 @@ import * as Text from './Text';
 import Projects from './Projects';
 
 // media
-import portrait from './media/portfolioportrait2.png';
-import bgimg from './media/bg.png';
-import bgimg2 from './media/bg2.png';
+import portrait from './media/portfolioportrait2_compressed.png';
+import bgimg from './media/bg_compressed.png';
+import bgimg2 from './media/bg2_compressed.png';
 
 class App extends React.Component {
   componentDidMount() {
