@@ -1,0 +1,139 @@
+.r {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin respond($width, $screen) {
+  @if $screen == 'x-small' {
+    @content;
+  } @else {
+    @media screen and (min-width: $width) {
+      @content;
+    }
+  }
+}
+
+@function suffix($screen) {
+  @if $screen == x-small {
+    @return '';
+  } @else {
+    @return -#{$screen};
+  }
+}
+
+$breakpoints: (
+  x-small: 575px,
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  x-large: 1200px,
+  xx-large: 1400px,
+);
+
+$margins: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+);
+
+$paddings: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+);
+
+@each $screen, $width in $breakpoints {
+  @include respond($width, $screen) {
+    @each $level, $value in $margins {
+      .m#{$level}#{suffix($screen)} {
+        margin: $value;
+      }
+      .ml#{$level}#{suffix($screen)} {
+        margin-left: $value;
+      }
+      .mr#{$level}#{suffix($screen)} {
+        margin-right: $value;
+      }
+      .mt#{$level}#{suffix($screen)} {
+        margin-top: $value;
+      }
+      .mb#{$level}#{suffix($screen)} {
+        margin-bottom: $value;
+      }
+      .mx#{$level}#{suffix($screen)} {
+        margin-left: $value;
+        margin-right: $value;
+      }
+      .my#{$level}#{suffix($screen)} {
+        margin-top: $value;
+        margin-bottom: $value;
+      }
+    }
+
+    @each $level, $value in $paddings {
+      .p#{$level}#{suffix($screen)} {
+        padding: $value;
+      }
+      .pl#{$level}#{suffix($screen)} {
+        padding-left: $value;
+      }
+      .pr#{$level}#{suffix($screen)} {
+        padding-right: $value;
+      }
+      .pt#{$level}#{suffix($screen)} {
+        padding-top: $value;
+      }
+      .pb#{$level}#{suffix($screen)} {
+        padding-bottom: $value;
+      }
+      .px#{$level}#{suffix($screen)} {
+        padding-left: $value;
+        padding-right: $value;
+      }
+      .py#{$level}#{suffix($screen)} {
+        padding-top: $value;
+        padding-bottom: $value;
+      }
+    }
+
+    .flex-column#{suffix($screen)} {
+      display: flex;
+      flex-direction: column;
+    }
+    .flex-row#{suffix($screen)} {
+      display: flex;
+      flex-direction: row;
+    }
+    .align-center#{suffix($screen)} {
+      align-items: center;
+    }
+    .justify-center#{suffix($screen)} {
+      justify-content: center;
+    }
+    .d-none#{suffix($screen)} {
+      display: none;
+    }
+    .d-block#{suffix($screen)} {
+      display: block;
+    }
+    .d-inline#{suffix($screen)} {
+      display: inline;
+    }
+    .d-inlineblock#{suffix($screen)} {
+      display: inline-block;
+    }
+    .d-inlineflex#{suffix($screen)} {
+      display: inline-flex;
+    }
+    .vis-hidden#{suffix($screen)} {
+      visibility: hidden;
+    }
+  }
+}
