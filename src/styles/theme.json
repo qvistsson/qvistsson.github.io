@@ -1,0 +1,9 @@
+{
+  "lightBg": "#e6e6e6",
+  "fadedDetail": "#c7c7c7",
+  "darkBg": "#373737de",
+  "textDark": "#1f1f1fee",
+  "textLight": "#ebebebde",
+  "primary": "#0091ffde",
+  "navHeight": "3.7rem"
+}

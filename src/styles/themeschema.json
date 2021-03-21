@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "lightBg": {
+      "type": "string",
+      "format": "color"
+    },
+    "fadedDetail": {
+      "type": "string",
+      "format": "color"
+    },
+    "darkBg": {
+      "type": "string",
+      "format": "color"
+    },
+    "textDark": {
+      "type": "string",
+      "format": "color"
+    },
+    "textLight": {
+      "type": "string",
+      "format": "color"
+    },
+    "primary": {
+      "type": "string",
+      "format": "color"
+    },
+    "navHeight": {
+      "type": "string"
+    }
+  }
+}
