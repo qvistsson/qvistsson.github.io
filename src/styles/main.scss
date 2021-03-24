@@ -85,6 +85,39 @@ body {
   visibility: hidden;
 }
 
+// background images
+
+.bg-circle {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url(/assets/portrait.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position-x: 99%;
+  background-position-y: variables.$navHeight;
+  background-attachment: fixed;
+}
+
+.bg-circle-pattern {
+  background-image: url(/assets/pattern.png);
+}
+
+.bg-circle-stairs {
+  background-image: url(/assets/stairs.png);
+}
+
+@media screen and (min-width: 1150px) {
+  .bg-circle {
+    background-size: 40%;
+    background-position-y: center;
+  }
+}
+
 // header
 
 .header {
