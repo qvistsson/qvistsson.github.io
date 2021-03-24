@@ -1,6 +1,7 @@
-<div class="portfolio p6">
-<div class="portfolio__bg"></div>
-  {% for paragraph in intro.paragraphs %}
-    <p class="portfolio__paragraph fs2">{{ paragraph }}</p>
-  {% endfor%}
+{% from "macros/text-header.njk" import textHeader %}
+{% from "macros/anchor.njk" import anchor %}
+
+<div class="content-block dark-bg p6">
+  {{ anchor("portfolio")}}
+  {{ textHeader(1, null, "Projects", true)}}
 </div>

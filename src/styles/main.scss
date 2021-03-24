@@ -8,14 +8,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-  font-family: 'Ubuntu', sans-serif;
-  font-family: 'Open Sans', sans-serif;
   font-family: 'Montserrat', sans-serif;
 }
 
 body {
   background-color: variables.$lightBg;
 }
+
+// main
+
+.main {
+  padding-top: variables.$navHeight;
+}
+
+// decorated header
+
+.decorated-header-stripe {
+  width: 2rem;
+  background-color: variables.$darkBg;
+}
+
+.decorated-header-stripe-thin {
+  width: 0.4rem;
+  background-color: variables.$darkBg;
+}
+
+.decorated-header-subtext {
+  font-weight: 400;
+  color: variables.$textDark;
+}
+
+.decorated-header-maintext {
+  font-weight: 500;
+  color: variables.$textDark;
+}
+
+.decorated-header-light {
+  .decorated-header-stripe {
+    width: 2rem;
+    background-color: variables.$textLight;
+  }
+
+  .decorated-header-stripe-thin {
+    width: 0.4rem;
+    background-color: variables.$textLight;
+  }
+
+  .decorated-header-subtext {
+    font-weight: 400;
+    color: variables.$textLight;
+  }
+
+  .decorated-header-maintext {
+    font-weight: 500;
+    color: variables.$textLight;
+  }
+}
+
+// content-div
+
+.content-block {
+  min-height: calc(100vh - #{variables.$navHeight});
+  position: relative;
+}
+
+.dark-bg {
+  background-color: variables.$darkBg;
+}
+
+// hidden anchor 
+
+.hidden-anchor {
+  display: block;
+  position: absolute;
+  top: -4.5rem;
+  visibility: hidden;
+}
+
+// header
 
 .header {
   height: variables.$navHeight;
@@ -30,7 +100,8 @@ body {
 
 .header--darkened {
   background-color: variables.$darkBg;
-  .nav__link-inner, .header__logo {
+  .nav__link-inner,
+  .header__logo {
     color: variables.$textLight;
   }
 }
@@ -66,15 +137,6 @@ body {
   outline-offset: 4px;
 }
 
-.main {
-  padding-top: variables.$navHeight;
-}
-
-.intro {
-  min-height: calc(100vh - #{variables.$navHeight});
-  position: relative;
-}
-
 .intro__bg {
   top: 0;
   left: 0;
@@ -108,11 +170,6 @@ body {
   margin-top: 1rem;
 }
 
-.portfolio {
-  min-height: calc(100vh - #{variables.$navHeight});
-  position: relative;
-  background-color: variables.$darkBg;
-}
 
 .portfolio__paragraph {
   color: variables.$textLight;

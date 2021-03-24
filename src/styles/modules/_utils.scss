@@ -130,6 +130,9 @@ $fontsizes: (
     .align-stretch#{suffix($screen)} {
       align-items: stretch;
     }
+    .align-end#{suffix($screen)} {
+      align-items: flex-end;
+    }
     .justify-center#{suffix($screen)} {
       justify-content: center;
     }
