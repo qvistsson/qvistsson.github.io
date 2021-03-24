@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "npx del dist && sass src/styles/main.scss dist/styles/main.css --no-source-map",
+    "prebuild": "npx del dist && sass src/styles/main.scss dist/styles/main.css --no-source-map --style compressed",
     "build": "npx @11ty/eleventy",
     "postbuild": "purgecss --css dist/styles/main.css --content dist/index.html --output dist/styles/ && npm run autofixer",
     "autofixer": "npx postcss dist/styles/main.css --use autoprefixer -d dist/styles",

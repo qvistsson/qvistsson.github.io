@@ -1,9 +1,8 @@
+@use 'modules/normalize';
+@use 'modules/reset';
+@use 'modules/utils';
+@use 'modules/variables';
+
 .testClass {
-  background-image: url(image@1x.png);
   color: green;
-}
-@media (min-resolution: 2dppx) {
-  .testClass {
-    background-image: url(image@2x.png);
-  }
 }
