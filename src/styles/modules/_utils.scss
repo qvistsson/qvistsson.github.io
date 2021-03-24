@@ -36,20 +36,20 @@ $margins: (
 
 $paddings: (
   1: 0.25rem,
-  2: 0.5rem,
-  3: 0.75rem,
-  4: 1rem,
-  5: 1.25rem,
-  6: 1.5rem,
+  2: 0.75rem,
+  3: 1.25rem,
+  4: 1.75rem,
+  5: 2.25rem,
+  6: 4.5rem,
 );
 
 $fontsizes: (
   1: 0.7rem,
-  2: 0.9rem,
+  2: 1rem,
   3: 1.1rem,
   4: 1.5rem,
-  5: 1.8rem,
-  6: 2rem,
+  5: 2.4rem,
+  6: 3rem,
 );
 
 @each $screen, $width in $breakpoints {
@@ -126,6 +126,9 @@ $fontsizes: (
     }
     .align-center#{suffix($screen)} {
       align-items: center;
+    }
+    .align-stretch#{suffix($screen)} {
+      align-items: stretch;
     }
     .justify-center#{suffix($screen)} {
       justify-content: center;

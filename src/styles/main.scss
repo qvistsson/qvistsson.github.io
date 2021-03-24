@@ -3,6 +3,142 @@
 @use 'modules/utils';
 @use 'modules/variables';
 
-.testClass {
-  color: green;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: variables.$lightBg;
+}
+
+.header {
+  height: variables.$navHeight;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: variables.$lightBg;
+  transition: background-color 0.4s;
+  z-index: 100;
+}
+
+.header--darkened {
+  background-color: variables.$darkBg;
+  .nav__link-inner, .header__logo {
+    color: variables.$textLight;
+  }
+}
+
+.header__logo {
+  color: variables.$textDark;
+  font-weight: 500;
+  transition: color 0.4s;
+}
+
+.nav__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__link:hover {
+  background-color: variables.$lightBgHover;
+}
+
+.nav__link:focus {
+  outline: none;
+}
+
+.nav__link-inner {
+  color: variables.$textDark;
+  transition: color 0.4s;
+}
+
+.nav__link:focus .nav__link-inner {
+  outline: variables.$faded solid 2px;
+  outline-offset: 4px;
+}
+
+.main {
+  padding-top: variables.$navHeight;
+}
+
+.intro {
+  min-height: calc(100vh - #{variables.$navHeight});
+  position: relative;
+}
+
+.intro__bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url(/assets/portrait.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position-x: 99%;
+  background-position-y: variables.$navHeight;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 1150px) {
+  .intro__bg {
+    background-size: 40%;
+    background-position-y: center;
+  }
+}
+
+.intro__paragraph {
+  color: variables.$textDark;
+  line-height: 1.5rem;
+  font-weight: 400;
+  max-width: 40rem;
+}
+
+.intro__paragraph + .intro__paragraph {
+  margin-top: 1rem;
+}
+
+.portfolio {
+  min-height: calc(100vh - #{variables.$navHeight});
+  position: relative;
+  background-color: variables.$darkBg;
+}
+
+.portfolio__paragraph {
+  color: variables.$textLight;
+  line-height: 1.5rem;
+  font-weight: 400;
+  max-width: 40rem;
+}
+
+.portfolio__bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+  background-image: url(/assets/pattern.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position-x: 99%;
+  background-position-y: variables.$navHeight;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 1150px) {
+  .portfolio__bg {
+    background-size: 40%;
+    background-position-y: center;
+  }
 }
