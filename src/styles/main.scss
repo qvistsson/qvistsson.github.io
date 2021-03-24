@@ -1,5 +1,6 @@
 .testClass {
   background-image: url(image@1x.png);
+  color: green;
 }
 @media (min-resolution: 2dppx) {
   .testClass {

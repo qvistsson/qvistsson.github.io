@@ -8,7 +8,8 @@
     "build": "npx @11ty/eleventy",
     "postbuild": "purgecss --css dist/styles/main.css --content dist/index.html --output dist/styles/ && npm run autofixer",
     "autofixer": "npx postcss dist/styles/main.css --use autoprefixer -d dist/styles",
-    "predev": "npx del dist",
+    "predev": "npx del dist && npm run sassWatch",
+    "sassWatch": "sass src/styles/main.scss dist/styles/main.css --no-source-map --watch &",
     "dev": "npx @11ty/eleventy --serve"
   },
   "repository": {
