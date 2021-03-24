@@ -1,49 +1,35 @@
 {
   "name": "qvistdev09.github.io",
-  "version": "0.1.0",
-  "homepage": "https://qvistdev09.github.io",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.3",
-    "normalize.css": "^8.0.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.1"
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "postbuild": "purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "prebuild": "npx del dist && sass src/styles/main.scss dist/styles/main.css --no-source-map",
+    "build": "npx @11ty/eleventy",
+    "postbuild": "purgecss --css dist/styles/main.css --content dist/index.html --output dist/styles/ && npm run autofixer",
+    "autofixer": "npx postcss dist/styles/main.css --use autoprefixer -d dist/styles",
+    "predev": "npx del dist",
+    "dev": "npx @11ty/eleventy --serve"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qvistdev09/qvistdev09.github.io.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qvistdev09/qvistdev09.github.io/issues"
   },
-  "devDependencies": {
-    "gh-pages": "^3.1.0",
-    "node-sass": "^5.0.0",
-    "purgecss": "^4.0.2",
-    "styled-components": "^5.2.1"
+  "homepage": "https://github.com/qvistdev09/qvistdev09.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.2.5",
+    "axios": "^0.21.1",
+    "del-cli": "^3.0.1",
+    "nunjucks": "^3.2.3",
+    "postcss-cli": "^8.3.1",
+    "purgecss": "^4.0.3",
+    "sass": "^1.32.8"
   }
 }
